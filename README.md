@@ -1,92 +1,88 @@
-<!-- ====================================================================== -->
-<!-- 🎨 CUSTOM BANNER -->
-<!-- ====================================================================== -->
+
+
+<!-- ============================================================ -->
+<!-- 🌌 GOD MODE README — BY SRIHARSHA K -->
+<!-- ============================================================ -->
 
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=35&duration=3000&color=00F7FF&center=true&vCenter=true&width=900&lines=HEART+DISEASE+PREDICTION+SYSTEM;Machine+Learning+%7C+MLOps+%7C+CI%2FCD+%7C+Docker;Developed+by+Sriharsha+K" />
+<!-- Animated Typing Banner -->
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=38&duration=3000&pause=800&color=00F7FF&center=true&vCenter=true&width=1000&lines=HEART+DISEASE+PREDICTION+SYSTEM;MACHINE+LEARNING+%7C+MLOPS+PIPELINE;STREAMLIT+APP+%7C+DOCKER+%7C+CI%2FCD;DEVELOPED+BY+SRIHARSHA+K" />
+
+<!-- Glowing Divider -->
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 
 </div>
 
 ---
 
-<!-- ====================================================================== -->
-<!-- ✨ BADGES -->
-<!-- ====================================================================== -->
-
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-3.10-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-Containerized-0db7ed?style=for-the-badge&logo=docker&logoColor=white)
-![MLOps](https://img.shields.io/badge/MLOps-Pipeline-FFDD00?style=for-the-badge&logo=mlflow&logoColor=black)
-![GitHub](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+<!-- Neon Tech Badges -->
+<img src="https://img.shields.io/badge/Machine%20Learning-%F0%9F%A4%96-orange?style=for-the-badge" />
+<img src="https://img.shields.io/badge/MLOps-%F0%9F%94%A5-purple?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Docker-%F0%9F%90%B3-blue?style=for-the-badge&logo=docker" />
+<img src="https://img.shields.io/badge/Streamlit-%F0%9F%8E%A8-red?style=for-the-badge&logo=streamlit" />
+<img src="https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-%230088ff?style=for-the-badge&logo=githubactions" />
+<img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" />
 
 </div>
 
 ---
 
-# 🚀 Overview
+# ⚡ PROJECT OVERVIEW
 
-A **production-grade Heart Disease Prediction System** built using:
+A **GOD-MODE production-style Heart Disease Prediction System** using:
 
-- 🧠 **Machine Learning (Random Forest)**
-- ⚙️ **MLOps best practices**
-- 🐳 **Docker containerization**
-- 🔄 **CI/CD with GitHub Actions**
-- 🎨 **Streamlit web application**
-- 📦 **Artifact & pipeline tracking**
+- 🧠 Random Forest  
+- 🎨 Streamlit App  
+- 🐳 Docker  
+- 🔄 CI/CD  
+- 🧼 Preprocessing Pipeline  
 
-This project predicts heart disease **risk probability** using both **single-patient input** and **batch CSV prediction**.
-
----
-
-# 🌈 Features
-
-<img align="right" width="310" src="https://media.giphy.com/media/Q5pO0Q3h43iDi/giphy.gif"/>
-
-### 🔍 **Single Patient Prediction**
-- Enter medical values → instant output
-
-### 📂 **Batch Prediction**
-- Upload CSV → predictions for all patients
-
-### 📊 **Model Explainability**
-- Feature importance visualization  
-- Medical reasoning
-
-### 🧹 **Full Data Pipeline**
-- Cleaning  
-- Scaling  
-- Encoding  
-- Preprocessing artifacts
-
-### 🧠 **Model**
-- Random Forest Classifier  
-- Accuracy ~85%
-
-### ⚙️ **DevOps + MLOps**
-- Docker build  
-- Automated tests  
-- Logging  
-- Artifact versioning  
-- (Workflows present but disabled)
-
-<br><br>
+Predicts risk from **single input** & **batch CSV**.
 
 ---
 
-# 🗂 Project Structure
+# 🌈 FEATURES (NEON MODE)
 
-```plaintext
+<img align="right" width="300" src="https://media.giphy.com/media/3oEduSbSGpGaRX2Vri/giphy.gif">
+
+- 🔍 Single patient prediction  
+- 📂 Batch CSV prediction  
+- 📊 Feature importance  
+- 🧹 Data cleaning  
+- 🧠 Random Forest model  
+- 🐳 Docker support  
+- 🔄 CI/CD (disabled)  
+- 📑 Logging  
+
+<br><br><br>
+
+---
+
+# 🧬 SYSTEM ARCHITECTURE
+
+```mermaid
+flowchart LR
+    A[User Inputs] --> B[Preprocessing Pipeline]
+    B --> C[Encoding & Scaling]
+    C --> D[Random Forest Model]
+    D --> E[Prediction Output]
+```
+
+---
+
+# 📦 PROJECT STRUCTURE
+
+```
 Heart_Disease_Pred_MLOPS/
 │
-├── app.py                         # Streamlit UI
-├── main.py                        # Pipeline controller
-├── data_processing.py             # Preprocessing steps
-├── ml_functions.py                # ML model logic
-├── helper_functions.py            # Logging & utilities
+├── app.py
+├── main.py
+├── data_processing.py
+├── ml_functions.py
+├── helper_functions.py
 │
 ├── data/
 │   ├── raw/
@@ -101,59 +97,81 @@ Heart_Disease_Pred_MLOPS/
 ├── Dockerfile
 ├── requirements.txt
 ├── .env.example
-└── .github/workflows/             # CI/CD workflows (disabled)
+└── .github/workflows/
+```
 
-🧠 ML Pipeline Workflow
-flowchart TD
-    A[User Input / CSV Upload] --> B[Data Preprocessing]
-    B --> C[Feature Engineering + Encoding]
-    C --> D[Random Forest Model]
-    D --> E[Prediction Output]
+---
 
-🐳 Docker Usage
-Build Image
-docker build -t heart-app .
+# 🖥️ RUN LOCALLY
 
-Run Container
-docker run -p 8501:8501 heart-app
+Install:
+```bash
+pip install -r requirements.txt
+```
 
-🖥️ Run Streamlit App
+Train:
+```bash
+python main.py
+```
+
+Run app:
+```bash
 streamlit run app.py
+```
 
-📈 Model Performance
-Metric	Score
-Accuracy	85%
-Precision	84%
-Recall	86%
-F1 Score	85%
-🚧 Future Enhancements
+---
 
-🔬 SHAP & LIME Explainability
+# 🐳 DOCKER
 
-📊 Interactive plots
+Build:
+```bash
+docker build -t heart-app .
+```
 
-🧪 Model drift monitoring
+Run:
+```bash
+docker run -p 8501:8501 heart-app
+```
 
-🔁 Automated retraining jobs
+---
 
-🔐 Authenticated clinical access
+# 📈 MODEL PERFORMANCE
 
-🧠 Deep learning extension
+| Metric | Score |
+|--------|--------|
+| Accuracy | 85% |
+| Precision | 84% |
+| Recall | 86% |
+| F1 Score | 85% |
 
-👨‍💻 Maintainer
+---
 
-Name: Sriharsha K
-Email: sriharsha.ai22@bmsce.ac.in
+# 🔮 FUTURE UPGRADES
 
-GitHub: SRIHARSHA-BHARADWAJ
+- SHAP/LIME explainability  
+- Drift detection  
+- Auto retraining  
+- Dashboards  
+- Secure medical API  
+- Deep learning  
 
-📝 License
+---
 
-This project is licensed under the MIT License.
+# 👤 MAINTAINER
+
+**Name:** Sriharsha K  
+**Email:** sriharsha.ai22@bmsce.ac.in  
+**GitHub:** https://github.com/SRIHARSHA-BHARADWAJ  
+
+---
 
 <div align="center">
-⭐ If you like this project, consider giving it a star! ⭐
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 
-Made with ❤️ by Sriharsha K
+### ⭐ If you like this project, star the repo!  
+Made with 💖 by **Sriharsha K**  
 
-</div> ```
+<img src="https://media.giphy.com/media/g9582DNuQppxC/giphy.gif" width="200px"/>
+</div>
+
+
