@@ -1,53 +1,50 @@
 
 
-<!-- -------------------------------------------------------------- -->
-<!-- PREMIUM PROFESSIONAL HEADER -->
-<!-- -------------------------------------------------------------- -->
-
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=600&size=34&duration=2600&pause=700&color=3DA9FC&center=true&vCenter=true&width=900&lines=Heart+Disease+Prediction+System;End-to-End+Machine+Learning+Pipeline;Streamlit+%7C+MLOps+%7C+Docker+%7C+CI%2FCD;By+Sriharsha+K" />
+<!-- Animated Professional Header -->
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=32&duration=2500&pause=800&color=00E7FF&center=true&vCenter=true&width=900&lines=Heart+Disease+Prediction+System;Machine+Learning+%7C+MLOps+%7C+Streamlit;Docker+%7C+Logging+%7C+Artifacts;Developed+by+Sriharsha+K" />
 
 <br>
 
-<!-- Professional Badge Row -->
-<img src="https://img.shields.io/badge/Python-3.10-316FEB?style=flat&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/Streamlit-Application-EA244B?style=flat&logo=streamlit&logoColor=white" />
-<img src="https://img.shields.io/badge/Docker-Containerized-2391E6?style=flat&logo=docker&logoColor=white" />
+<!-- Minimal Professional Badges -->
+<img src="https://img.shields.io/badge/Python-3.10-1E90FF?style=flat&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Streamlit-Application-FF4B4B?style=flat&logo=streamlit&logoColor=white" />
+<img src="https://img.shields.io/badge/Docker-Containerized-2496ED?style=flat&logo=docker&logoColor=white" />
 <img src="https://img.shields.io/badge/MLOps-Pipeline-000000?style=flat&logo=mlflow&logoColor=white" />
 <img src="https://img.shields.io/badge/GitHub-Actions-2F80ED?style=flat&logo=githubactions&logoColor=white" />
-<img src="https://img.shields.io/badge/License-MIT-43A047?style=flat" />
+<img src="https://img.shields.io/badge/License-MIT-3CB371?style=flat" />
 
 </div>
 
 ---
 
-## **Overview**
+## **📌 Project Overview**
 
-A fully modular **Heart Disease Prediction System** designed to meet production-level standards using:
+A modular, production-oriented **Heart Disease Prediction System** featuring:
 
-- **Streamlit** UI  
-- **Random Forest** ML model  
-- **Structured preprocessing pipeline**  
-- **Artifact storage**  
-- **Logging system**  
-- **Docker containerization**  
-- (Optional) **CI/CD workflows**
+- Random Forest ML model  
+- Streamlit web interface  
+- Clean preprocessing pipeline  
+- Full logging system  
+- Artifact storage (model + pipeline)  
+- Docker support  
+- (Optional) CI/CD workflow structure  
 
-Supports both **single-patient predictions** and **batch predictions using CSV files**, making it suitable for clinical simulations, academic demos, or ML deployment practice.
+Designed to be clean, scalable, and easy to deploy.
 
 ---
 
-## **Project Structure**
+## **📁 Project Structure**
 
 ```
 Heart_Disease_Pred_MLOPS/
 │
 ├── app.py                     # Streamlit UI
 ├── main.py                    # Pipeline orchestrator
-├── data_processing.py         # Preprocessing pipeline
+├── data_processing.py         # Preprocessing steps
 ├── ml_functions.py            # ML model logic
-├── helper_functions.py        # Logging + utilities
+├── helper_functions.py        # Logging utilities
 │
 ├── data/
 │   ├── raw/
@@ -61,20 +58,19 @@ Heart_Disease_Pred_MLOPS/
 ├── logs/
 ├── Dockerfile
 ├── requirements.txt
-├── .env.example
-└── .github/workflows/         # (Disabled by choice)
+└── .github/workflows/         # (Workflows exist but disabled)
 ```
 
 ---
 
-## **Machine Learning Pipeline**
+## **⚙️ Machine Learning Pipeline**
 
 ```
 User Input or CSV File
           ↓
-Preprocessing Pipeline
+Preprocessing & Cleaning
           ↓
-Feature Encoding & Normalization
+Feature Encoding & Scaling
           ↓
 Random Forest Classifier
           ↓
@@ -83,7 +79,7 @@ Prediction Output
 
 ---
 
-## **Model Performance**
+## **📊 Model Performance**
 
 | Metric     | Score |
 |------------|--------|
@@ -94,61 +90,60 @@ Prediction Output
 
 ---
 
-## **Running the Application**
+## **▶️ Running the Application**
 
-### **Install dependencies**
+### Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-### **Train model**
+### Train the model:
 ```bash
 python main.py
 ```
 
-### **Launch Streamlit application**
+### Launch Streamlit:
 ```bash
 streamlit run app.py
 ```
 
 ---
 
-## **Docker Deployment**
+## **🐳 Docker Support**
 
-### Build:
+### Build Image:
 ```bash
 docker build -t heart-app .
 ```
 
-### Run:
+### Run Container:
 ```bash
 docker run -p 8501:8501 heart-app
 ```
 
 ---
 
-## **Future Enhancements**
+## **🚀 Future Enhancements**
 
-- SHAP / LIME explainability  
-- Model drift monitoring  
-- Automated continuous training  
-- Authentication layer  
-- Dashboard-based visual insights  
-- Deep learning-based version  
+- SHAP / LIME Explainability  
+- Drift monitoring  
+- Auto-retraining pipeline  
+- Security layer for clinical usage  
+- Dashboard UI  
+- Deep learning model variant  
 
 ---
 
-## **Maintainer**
+## **👤 Maintainer**
 
 **Name:** Sriharsha K  
 **Email:** sriharsha.ai22@bmsce.ac.in  
-**GitHub Username:** SRIHARSHA-BHARADWAJ  
-GitHub: https://github.com/SRIHARSHA-BHARADWAJ  
+**GitHub:** https://github.com/SRIHARSHA-BHARADWAJ  
 
 ---
 
-## **License**
+## **📄 License**
 
-Released under the **MIT License**.  
-See `LICENSE` file for details.
+Licensed under the **MIT License**.
+
 
