@@ -1,88 +1,54 @@
-
-
-<!-- ============================================================ -->
-<!-- 🌌 GOD MODE README — BY SRIHARSHA K -->
-<!-- ============================================================ -->
+=========================== COPY FROM HERE ===========================
 
 <div align="center">
 
-<!-- Animated Typing Banner -->
-<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=38&duration=3000&pause=800&color=00F7FF&center=true&vCenter=true&width=1000&lines=HEART+DISEASE+PREDICTION+SYSTEM;MACHINE+LEARNING+%7C+MLOPS+PIPELINE;STREAMLIT+APP+%7C+DOCKER+%7C+CI%2FCD;DEVELOPED+BY+SRIHARSHA+K" />
+<!-- Sleek Animated Heading -->
+<img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=600&size=32&duration=2500&pause=700&color=00A3FF&center=true&vCenter=true&width=900&lines=Heart+Disease+Prediction+System;Machine+Learning+%7C+MLOps+%7C+Streamlit+%7C+Docker;By+Sriharsha+K" />
 
-<!-- Glowing Divider -->
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
+<br>
+
+<!-- Professional Badges -->
+<img src="https://img.shields.io/badge/Python-3.10-3776AB?style=flat-square&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Streamlit-Application-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" />
+<img src="https://img.shields.io/badge/Docker-Containerized-2496ED?style=flat-square&logo=docker&logoColor=white" />
+<img src="https://img.shields.io/badge/MLOps-Pipeline-000000?style=flat-square&logo=mlflow&logoColor=white" />
+<img src="https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" />
+<img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" />
 
 </div>
 
 ---
 
-<div align="center">
+## 📌 Overview
 
-<!-- Neon Tech Badges -->
-<img src="https://img.shields.io/badge/Machine%20Learning-%F0%9F%A4%96-orange?style=for-the-badge" />
-<img src="https://img.shields.io/badge/MLOps-%F0%9F%94%A5-purple?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Docker-%F0%9F%90%B3-blue?style=for-the-badge&logo=docker" />
-<img src="https://img.shields.io/badge/Streamlit-%F0%9F%8E%A8-red?style=for-the-badge&logo=streamlit" />
-<img src="https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-%230088ff?style=for-the-badge&logo=githubactions" />
-<img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" />
+This project is an **end-to-end, production-ready Heart Disease Prediction System** built with:
 
-</div>
+- Machine Learning (**Random Forest**)
+- Streamlit web application
+- Modular MLOps pipeline  
+- Logging & artifact tracking  
+- Docker containerization  
+- (Optional) CI/CD workflows via GitHub Actions  
 
----
+It supports both:
 
-# ⚡ PROJECT OVERVIEW
+- **Single-patient prediction**
+- **Batch CSV prediction**
 
-A **GOD-MODE production-style Heart Disease Prediction System** using:
-
-- 🧠 Random Forest  
-- 🎨 Streamlit App  
-- 🐳 Docker  
-- 🔄 CI/CD  
-- 🧼 Preprocessing Pipeline  
-
-Predicts risk from **single input** & **batch CSV**.
+Purposefully designed to follow clean architecture principles and production standards.
 
 ---
 
-# 🌈 FEATURES (NEON MODE)
-
-<img align="right" width="300" src="https://media.giphy.com/media/3oEduSbSGpGaRX2Vri/giphy.gif">
-
-- 🔍 Single patient prediction  
-- 📂 Batch CSV prediction  
-- 📊 Feature importance  
-- 🧹 Data cleaning  
-- 🧠 Random Forest model  
-- 🐳 Docker support  
-- 🔄 CI/CD (disabled)  
-- 📑 Logging  
-
-<br><br><br>
-
----
-
-# 🧬 SYSTEM ARCHITECTURE
-
-```mermaid
-flowchart LR
-    A[User Inputs] --> B[Preprocessing Pipeline]
-    B --> C[Encoding & Scaling]
-    C --> D[Random Forest Model]
-    D --> E[Prediction Output]
-```
-
----
-
-# 📦 PROJECT STRUCTURE
+## 📂 Project Structure
 
 ```
 Heart_Disease_Pred_MLOPS/
 │
-├── app.py
-├── main.py
-├── data_processing.py
-├── ml_functions.py
-├── helper_functions.py
+├── app.py                      # Streamlit UI
+├── main.py                     # Entry point / pipeline orchestrator
+├── data_processing.py          # Preprocessing pipeline
+├── ml_functions.py             # Training & inference logic
+├── helper_functions.py         # Logging + utility helpers
 │
 ├── data/
 │   ├── raw/
@@ -93,85 +59,96 @@ Heart_Disease_Pred_MLOPS/
 │   ├── heart_disease_model.pkl
 │   └── data_processing_pipeline.pkl
 │
-├── logs/
+├── logs/                       # Application logs
 ├── Dockerfile
 ├── requirements.txt
 ├── .env.example
-└── .github/workflows/
+└── .github/workflows/          # (CI/CD workflows – disabled)
 ```
 
 ---
 
-# 🖥️ RUN LOCALLY
+## ⚙️ ML Pipeline
 
-Install:
+```
+User Input / CSV
+       ↓
+Data Preprocessing
+       ↓
+Feature Encoding & Scaling
+       ↓
+Random Forest Model
+       ↓
+Prediction Output
+```
+
+---
+
+## 🧠 Model Performance
+
+| Metric     | Score |
+|------------|--------|
+| Accuracy   | 85%    |
+| Precision  | 84%    |
+| Recall     | 86%    |
+| F1 Score   | 85%    |
+
+---
+
+## ▶️ Running the Application
+
+### **Install dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-Train:
+### **Run training**
 ```bash
 python main.py
 ```
 
-Run app:
+### **Launch Streamlit app**
 ```bash
 streamlit run app.py
 ```
 
 ---
 
-# 🐳 DOCKER
+## 🐳 Docker Support
 
-Build:
+### **Build image**
 ```bash
 docker build -t heart-app .
 ```
 
-Run:
+### **Run container**
 ```bash
 docker run -p 8501:8501 heart-app
 ```
 
 ---
 
-# 📈 MODEL PERFORMANCE
+## 🚀 Future Enhancements
 
-| Metric | Score |
-|--------|--------|
-| Accuracy | 85% |
-| Precision | 84% |
-| Recall | 86% |
-| F1 Score | 85% |
-
----
-
-# 🔮 FUTURE UPGRADES
-
-- SHAP/LIME explainability  
-- Drift detection  
-- Auto retraining  
-- Dashboards  
-- Secure medical API  
-- Deep learning  
+- Model explainability (SHAP/LIME)  
+- Model drift monitoring  
+- Automated retraining  
+- Authentication for clinical use  
+- Advanced dashboards  
+- Deep learning extension  
 
 ---
 
-# 👤 MAINTAINER
+## 👨‍💻 Maintainer
 
 **Name:** Sriharsha K  
 **Email:** sriharsha.ai22@bmsce.ac.in  
-**GitHub:** https://github.com/SRIHARSHA-BHARADWAJ  
+**GitHub Username:** SRIHARSHA-BHARADWAJ  
+GitHub URL: https://github.com/SRIHARSHA-BHARADWAJ  
 
 ---
 
-<div align="center">
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
+## 📄 License  
+Released under the **MIT License**. See `LICENSE` for details.
 
-### ⭐ If you like this project, star the repo!  
-Made with 💖 by **Sriharsha K**  
-
-<img src="https://media.giphy.com/media/g9582DNuQppxC/giphy.gif" width="200px"/>
-</div>
-
-
+=========================== COPY UNTIL HERE ===========================
