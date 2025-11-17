@@ -1,72 +1,66 @@
 
 
 <!-- -------------------------------------------------------------- -->
-<!-- 🚀 PREMIUM FUTURISTIC HEADER -->
+<!-- 🚀 ULTRA-PREMIUM FUTURISTIC HEADER (FINAL MODE V2) -->
 <!-- -------------------------------------------------------------- -->
 
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Montserrat&weight=600&size=32&duration=2600&pause=700&color=00C6FF&center=true&vCenter=true&width=1000&lines=Heart+Disease+Prediction+Application;End-to-End+Machine+Learning+%26+MLOps+Pipeline;Streamlit+%7C+Docker+%7C+CI%2FCD+Ready;Developed+by+Sriharsha+K" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Syne&weight=700&size=34&duration=2500&pause=800&color=00D0FF&center=true&vCenter=true&width=1000&lines=Heart+Disease+Prediction+System;End-to-End+Machine+Learning+Pipeline;Streamlit+%7C+MLOps+%7C+Docker+Ready;Developed+by+Sriharsha+K" />
 
 <br>
 
-<!-- Premium Badges Row -->
+<!-- Minimal Premium Badges -->
 <img src="https://img.shields.io/badge/Python-3.10-3776AB?style=for-the-badge&logo=python&logoColor=white" />
 <img src="https://img.shields.io/badge/Streamlit-Web%20App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
-<img src="https://img.shields.io/badge/Scikit--Learn-ML%20Model-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" />
+<img src="https://img.shields.io/badge/Scikit--Learn-ML%20Model-F89C2E?style=for-the-badge&logo=scikitlearn&logoColor=white" />
 <img src="https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
 <img src="https://img.shields.io/badge/MLOps-Pipeline-000000?style=for-the-badge&logo=mlflow&logoColor=white" />
-<img src="https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2671E5?style=for-the-badge&logo=githubactions&logoColor=white" />
-<img src="https://img.shields.io/badge/License-MIT-2ECC71?style=for-the-badge" />
+<img src="https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2552CC?style=for-the-badge&logo=githubactions&logoColor=white" />
+<img src="https://img.shields.io/badge/License-MIT-27AE60?style=for-the-badge" />
 
 <br><br>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%"/>
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/clean.svg" width="100%"/>
 
 </div>
 
 ---
 
-# 📌 **Heart Disease Prediction Application**
+# 📌 **Project Overview**
 
-A complete **Machine Learning + MLOps** application designed to predict the probability of heart disease using real-world medical attributes.
+A clean, modular, and production-focused **Heart Disease Prediction Application** built using a complete **Machine Learning + MLOps** workflow.
 
-This project includes:
+This project integrates:
 
-- A fully polished **Streamlit UI**
-- A clean and modular **Machine Learning pipeline**
-- Professional **MLOps-ready architecture**
-- Model explanation and visualization
-- Production-quality **logging**, **artifacts**, and **pipeline structure**
-- Optional deployment pipeline using **Docker** and **CI/CD** workflows
+- A professional **Streamlit** user interface  
+- A fully modular **data preprocessing pipeline**  
+- A trained **Random Forest model**  
+- Structured **logging**, **artifacts**, and **environment handling**  
+- Containerization with **Docker**  
+- CI/CD-ready workflow templates (GitHub Actions)
+
+Designed with **clean architecture principles**, suitable for real-world ML deployment, academic showcases, and portfolio-level presentation.
 
 ---
 
 # 📋 **Features**
 
-### ✅ **Individual Patient Prediction**
-- Enter patient details  
-- Real-time ML prediction  
+### ✔ Individual Patient Prediction  
+Enter medical details → get instant ML prediction  
 
-### ✅ **Batch Prediction (CSV File)**
-- Upload a CSV  
-- Bulk inferencing  
-- Export predictions as downloadable file  
+### ✔ Batch CSV Prediction  
+Upload CSV → predictions generated for all rows  
 
-### ✅ **Model Explainability**
-- Feature importance visualization  
-- Medical interpretation  
+### ✔ Model Explainability  
+Feature importance insights  
+Medical reasoning for decisions  
 
-### ✅ **Comprehensive Logging**
-- Data processing logs  
-- Model inference logs  
-- Debug-level internal logs  
+### ✔ Comprehensive Logging  
+Every step — preprocessing, inference, batch jobs — fully logged  
 
-### ✅ **Production-Ready Codebase**
-- Modular  
-- Scalable  
-- Reusable  
-- MLOps-oriented  
+### ✔ Modular, Maintainable Codebase  
+Clean structure aligned with MLOps best practices  
 
 ---
 
@@ -76,168 +70,108 @@ This project includes:
 Heart_Disease_Pred_MLOPS/
 │
 ├── app.py                           # Streamlit interface
-├── main.py                          # Application logic controller
-├── data_processing.py               # Preprocessing pipeline
-├── ml_functions.py                  # Model training & prediction
-├── helper_functions.py              # Logging & utilities
+├── main.py                          # Main ML pipeline controller
+├── data_processing.py               # Data preprocessing pipeline
+├── ml_functions.py                  # ML training & prediction logic
+├── helper_functions.py              # Logging + utility functions
 │
-├── data/
+├── data/                            # Input/Output folders
 │   ├── raw/
 │   ├── processed/
 │   └── output/
 │
-├── artifacts/
+├── artifacts/                       # Saved model + pipeline
 │   ├── heart_disease_model.pkl
 │   └── data_processing_pipeline.pkl
 │
 ├── logs/                            # Application logs
-├── Dockerfile                       # Docker container file
-├── requirements.txt                 # Python dependencies
-├── .env.example                     # Env template
-└── .github/workflows/               # CI/CD workflows (disabled)
+├── Dockerfile                       # Docker build file
+├── requirements.txt                 # Dependencies
+├── .env.example                     # Environment variable template
+└── .github/workflows/               # CI/CD workflow (optional)
 ```
-
----
-
-# 🚀 **Getting Started**
-
-## **Prerequisites**
-- Python 3.8 or higher  
-- pip or conda  
-- (Optional) Docker  
-
----
-
-## **Installation**
-
-### Clone the repo:
-```bash
-git clone https://github.com/SRIHARSHA-BHARADWAJ/Heart_Disease_Pred_MLOPS.git
-cd Heart_Disease_Pred_MLOPS
-```
-
-### Create virtual environment:
-```bash
-python -m venv venv
-```
-
-### Activate env:
-
-Windows:
-```bash
-venv\Scripts\activate
-```
-
-macOS/Linux:
-```bash
-source venv/bin/activate
-```
-
-### Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-### Create `.env` file:
-```
-DATA_DIR=data
-ARTIFACTS_DIR=artifacts
-LOGS_DIR=logs
-```
-
----
-
-# 💻 **Usage**
-
-## ⭐ **Single Patient Prediction**
-- Navigate to “Single Prediction”  
-- Input medical details  
-- Click **Predict**
-
-## ⭐ **Batch Prediction**
-- Go to “Batch Prediction”  
-- Upload CSV  
-- Download results  
-
-## ⭐ **Model Explanation**
-- Visualize feature importance  
-- Understand model decisions  
 
 ---
 
 # 🔧 **Technical Details**
 
-## **Model Information**
-- Algorithm: **Random Forest Classifier**
-- Preprocessing:
-  - StandardScaler  
-  - One-hot encoding  
-- Metrics:
-  - Accuracy: ~85%  
-  - Precision: ~84%  
-  - Recall: ~86%  
-  - F1-score: ~85%  
-  - ROC AUC: ~0.90  
+### **Model**
+- Random Forest Classifier  
+- Handles mixed categorical & numerical data  
+
+### **Preprocessing**
+- StandardScaler for numeric features  
+- One-hot encoding for categorical features  
+- Pipeline serialized with pickle  
+
+### **Metrics**
+- Accuracy: ~85%  
+- Precision: ~84%  
+- Recall: ~86%  
+- F1-score: ~85%  
+- ROC AUC: ~0.90  
 
 ---
 
 # 📊 **Expected Data Format**
 
 | Feature | Description | Type |
-|---------|-------------|------|
-| age | Age in years | Numerical |
+|--------|-------------|------|
+| age | Age in years | Numeric |
 | sex | 1=Male, 0=Female | Binary |
-| cp | Chest pain type (0–3) | Categorical |
-| trestbps | Resting blood pressure | Numerical |
-| chol | Serum cholesterol | Numerical |
-| fbs | Fasting blood sugar (>120mg/dl) | Binary |
-| restecg | ECG results | Categorical |
-| thalach | Max heart rate | Numerical |
-| exang | Exercise induced angina | Binary |
-| oldpeak | ST depression | Numerical |
-| slope | Slope of ST segment | Categorical |
-| target | Diagnosis | Binary |
+| cp | Chest Pain Type | Categorical |
+| trestbps | Resting Blood Pressure | Numeric |
+| chol | Cholesterol Level | Numeric |
+| fbs | Fasting Blood Sugar | Binary |
+| restecg | ECG Result | Categorical |
+| thalach | Max Heart Rate | Numeric |
+| exang | Exercise Angina | Binary |
+| oldpeak | ST Depression | Numeric |
+| slope | Slope of ST Segment | Categorical |
 
 ---
 
 # 📈 **Model Performance Summary**
 
-- High test-set performance  
-- Balanced precision and recall  
-- Robust on clinical datasets  
+- High recall for heart disease positive cases  
+- Stable and reliable performance  
+- Balanced precision-recall relationship  
 
 ---
 
-# 🛠 **MLOps: CI/CD Pipeline**
+# 🛠 **MLOps: CI/CD Pipeline Overview**
 
-### The workflow includes templates for:
-- Docker image build  
-- Automated tests  
-- Deployment to Render  
-- GitHub Actions workflows  
+### Workflow Includes:
+- Docker image building  
+- Automated testing  
+- Deployment triggers for platforms like Render  
+- Push-to-DockerHub pipeline  
 
-### Required Secrets:
+### Secrets Required:
 - `DOCKER_USERNAME`  
 - `DOCKER_PASSWORD`  
 - `RENDER_DEPLOY_HOOK`  
 
-### Pipeline Flow:
-
+### Pipeline Logic:
 ```
-Push to main → CI → Build Docker Image → Push to Docker Hub → Render Deployment
+Push to main 
+→ Build pipeline
+→ Create Docker image
+→ Push to Docker Hub
+→ Trigger Render Update (Optional)
 ```
 
 ---
 
-# 🔬 **Future Enhancements**
+# 🔮 **Future Enhancements**
 
-- SHAP & LIME explainability  
-- Model drift detection  
-- Dataset versioning  
-- Advanced dashboarding  
-- Authentication for hospital use  
-- Auto retraining pipeline  
+- SHAP / LIME model explainability  
+- Error and drift monitoring dashboards  
 - A/B testing for ML models  
+- Automated retraining workflows  
+- Authenticated multi-user application  
+- Cross-validation enhancements  
+- Advanced visualization UI  
 
 ---
 
@@ -249,8 +183,7 @@ This project is licensed under the **MIT License**.
 
 # 📞 **Contact**
 
-For queries or collaboration:  
-**Name:** Sriharsha K  
+**Maintainer:** Sriharsha K  
 **Email:** sriharsha.ai22@bmsce.ac.in  
 **GitHub:** https://github.com/SRIHARSHA-BHARADWAJ  
 
