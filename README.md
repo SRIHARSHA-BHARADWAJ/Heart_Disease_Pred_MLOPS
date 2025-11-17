@@ -1,54 +1,53 @@
-=========================== COPY FROM HERE ===========================
+
+
+<!-- -------------------------------------------------------------- -->
+<!-- PREMIUM PROFESSIONAL HEADER -->
+<!-- -------------------------------------------------------------- -->
 
 <div align="center">
 
-<!-- Sleek Animated Heading -->
-<img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=600&size=32&duration=2500&pause=700&color=00A3FF&center=true&vCenter=true&width=900&lines=Heart+Disease+Prediction+System;Machine+Learning+%7C+MLOps+%7C+Streamlit+%7C+Docker;By+Sriharsha+K" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=600&size=34&duration=2600&pause=700&color=3DA9FC&center=true&vCenter=true&width=900&lines=Heart+Disease+Prediction+System;End-to-End+Machine+Learning+Pipeline;Streamlit+%7C+MLOps+%7C+Docker+%7C+CI%2FCD;By+Sriharsha+K" />
 
 <br>
 
-<!-- Professional Badges -->
-<img src="https://img.shields.io/badge/Python-3.10-3776AB?style=flat-square&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/Streamlit-Application-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" />
-<img src="https://img.shields.io/badge/Docker-Containerized-2496ED?style=flat-square&logo=docker&logoColor=white" />
-<img src="https://img.shields.io/badge/MLOps-Pipeline-000000?style=flat-square&logo=mlflow&logoColor=white" />
-<img src="https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" />
-<img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" />
+<!-- Professional Badge Row -->
+<img src="https://img.shields.io/badge/Python-3.10-316FEB?style=flat&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Streamlit-Application-EA244B?style=flat&logo=streamlit&logoColor=white" />
+<img src="https://img.shields.io/badge/Docker-Containerized-2391E6?style=flat&logo=docker&logoColor=white" />
+<img src="https://img.shields.io/badge/MLOps-Pipeline-000000?style=flat&logo=mlflow&logoColor=white" />
+<img src="https://img.shields.io/badge/GitHub-Actions-2F80ED?style=flat&logo=githubactions&logoColor=white" />
+<img src="https://img.shields.io/badge/License-MIT-43A047?style=flat" />
 
 </div>
 
 ---
 
-## 📌 Overview
+## **Overview**
 
-This project is an **end-to-end, production-ready Heart Disease Prediction System** built with:
+A fully modular **Heart Disease Prediction System** designed to meet production-level standards using:
 
-- Machine Learning (**Random Forest**)
-- Streamlit web application
-- Modular MLOps pipeline  
-- Logging & artifact tracking  
-- Docker containerization  
-- (Optional) CI/CD workflows via GitHub Actions  
+- **Streamlit** UI  
+- **Random Forest** ML model  
+- **Structured preprocessing pipeline**  
+- **Artifact storage**  
+- **Logging system**  
+- **Docker containerization**  
+- (Optional) **CI/CD workflows**
 
-It supports both:
-
-- **Single-patient prediction**
-- **Batch CSV prediction**
-
-Purposefully designed to follow clean architecture principles and production standards.
+Supports both **single-patient predictions** and **batch predictions using CSV files**, making it suitable for clinical simulations, academic demos, or ML deployment practice.
 
 ---
 
-## 📂 Project Structure
+## **Project Structure**
 
 ```
 Heart_Disease_Pred_MLOPS/
 │
-├── app.py                      # Streamlit UI
-├── main.py                     # Entry point / pipeline orchestrator
-├── data_processing.py          # Preprocessing pipeline
-├── ml_functions.py             # Training & inference logic
-├── helper_functions.py         # Logging + utility helpers
+├── app.py                     # Streamlit UI
+├── main.py                    # Pipeline orchestrator
+├── data_processing.py         # Preprocessing pipeline
+├── ml_functions.py            # ML model logic
+├── helper_functions.py        # Logging + utilities
 │
 ├── data/
 │   ├── raw/
@@ -59,32 +58,32 @@ Heart_Disease_Pred_MLOPS/
 │   ├── heart_disease_model.pkl
 │   └── data_processing_pipeline.pkl
 │
-├── logs/                       # Application logs
+├── logs/
 ├── Dockerfile
 ├── requirements.txt
 ├── .env.example
-└── .github/workflows/          # (CI/CD workflows – disabled)
+└── .github/workflows/         # (Disabled by choice)
 ```
 
 ---
 
-## ⚙️ ML Pipeline
+## **Machine Learning Pipeline**
 
 ```
-User Input / CSV
-       ↓
-Data Preprocessing
-       ↓
-Feature Encoding & Scaling
-       ↓
-Random Forest Model
-       ↓
+User Input or CSV File
+          ↓
+Preprocessing Pipeline
+          ↓
+Feature Encoding & Normalization
+          ↓
+Random Forest Classifier
+          ↓
 Prediction Output
 ```
 
 ---
 
-## 🧠 Model Performance
+## **Model Performance**
 
 | Metric     | Score |
 |------------|--------|
@@ -95,60 +94,61 @@ Prediction Output
 
 ---
 
-## ▶️ Running the Application
+## **Running the Application**
 
 ### **Install dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-### **Run training**
+### **Train model**
 ```bash
 python main.py
 ```
 
-### **Launch Streamlit app**
+### **Launch Streamlit application**
 ```bash
 streamlit run app.py
 ```
 
 ---
 
-## 🐳 Docker Support
+## **Docker Deployment**
 
-### **Build image**
+### Build:
 ```bash
 docker build -t heart-app .
 ```
 
-### **Run container**
+### Run:
 ```bash
 docker run -p 8501:8501 heart-app
 ```
 
 ---
 
-## 🚀 Future Enhancements
+## **Future Enhancements**
 
-- Model explainability (SHAP/LIME)  
+- SHAP / LIME explainability  
 - Model drift monitoring  
-- Automated retraining  
-- Authentication for clinical use  
-- Advanced dashboards  
-- Deep learning extension  
+- Automated continuous training  
+- Authentication layer  
+- Dashboard-based visual insights  
+- Deep learning-based version  
 
 ---
 
-## 👨‍💻 Maintainer
+## **Maintainer**
 
 **Name:** Sriharsha K  
 **Email:** sriharsha.ai22@bmsce.ac.in  
 **GitHub Username:** SRIHARSHA-BHARADWAJ  
-GitHub URL: https://github.com/SRIHARSHA-BHARADWAJ  
+GitHub: https://github.com/SRIHARSHA-BHARADWAJ  
 
 ---
 
-## 📄 License  
-Released under the **MIT License**. See `LICENSE` for details.
+## **License**
 
-=========================== COPY UNTIL HERE ===========================
+Released under the **MIT License**.  
+See `LICENSE` file for details.
+
