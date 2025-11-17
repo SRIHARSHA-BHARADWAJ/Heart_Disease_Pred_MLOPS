@@ -1,207 +1,159 @@
-# ❤️ Heart Disease Prediction Application
+<!-- ====================================================================== -->
+<!-- 🎨 CUSTOM BANNER -->
+<!-- ====================================================================== -->
 
-A machine learning application that predicts the probability of heart disease based on patient health data. This project implements a complete MLOps workflow including data preprocessing, model training, and a user-friendly Streamlit interface.
+<div align="center">
 
-## 📋 Features
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=35&duration=3000&color=00F7FF&center=true&vCenter=true&width=900&lines=HEART+DISEASE+PREDICTION+SYSTEM;Machine+Learning+%7C+MLOps+%7C+CI%2FCD+%7C+Docker;Developed+by+Sriharsha+K" />
 
-- **Individual Patient Prediction**: Enter patient details and get an instant prediction
-- **Batch Prediction**: Upload CSV files for processing multiple patient records
-- **Model Explanation**: Understand feature importance and how predictions are made
-- **Comprehensive Logging**: Track all operations for auditability
-- **Production-ready Architecture**: Modular, maintainable codebase following MLOps best practices
-
-## 🏗 Project Structure
-
-```
-heart-disease-prediction/
-├── app.py                              # Streamlit interface
-├── main.py                             # Application logic control
-├── data_processing.py                  # Data preprocessing pipeline
-├── ml_functions.py                     # Model training and prediction
-├── helper_functions.py                 # Logging and utility functions
-├── data/                               # Data directory
-│   ├── raw/                           # Raw input data
-│   ├── processed/                     # Processed data
-│   └── output/                        # Prediction outputs
-├── artifacts/                          # Model artifacts
-│   ├── heart_disease_model.pkl        # Trained model
-│   └── data_processing_pipeline.pkl   # Preprocessing pipeline
-├── logs/                               # Application logs
-└── .env                               # Environment variables
-```
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Python 3.8+
-- pip or conda for package management
-
-### Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Srujanbj08/Heart_Disease_MLOPS.git
-   cd heart-disease-prediction
-   ```
-
-2. **Create a virtual environment:**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Create a `.env` file in the project root with the following variables:**
-   ```env
-   DATA_DIR=data
-   ARTIFACTS_DIR=artifacts
-   LOGS_DIR=logs
-   ```
-
-### Running the Application
-
-1. **Train the model (if not already trained):**
-   ```bash
-   python main.py
-   ```
-
-2. **Launch the Streamlit application:**
-   ```bash
-   streamlit run app.py
-   ```
-
-3. **Open your browser and navigate to** `http://localhost:8501`
-
-## 💻 Usage
-
-### Single Patient Prediction
-
-1. Navigate to "Single Prediction" in the sidebar
-2. Enter patient details including age, sex, chest pain type, etc.
-3. Click "Predict" to see the heart disease risk assessment
-
-### Batch Prediction
-
-1. Navigate to "Batch Prediction" in the sidebar
-2. Prepare a CSV file with the required columns (see format in the app)
-3. Upload the CSV file and click "Run Batch Prediction"
-4. Download the results with predictions added
-
-### Model Explanation
-
-1. Navigate to "Model Explanation" in the sidebar
-2. View feature importance chart and medical interpretation
-
-## 🔧 Technical Details
-
-### Model Information
-
-- **Algorithm**: Random Forest Classifier
-- **Features**: Age, sex, chest pain type, resting blood pressure, cholesterol, fasting blood sugar, ECG results, max heart rate, exercise-induced angina, ST depression, ST slope
-- **Preprocessing**: Standardization for numerical features, one-hot encoding for categorical features
-- **Metrics**: Accuracy, precision, recall, F1-score, ROC AUC
-
-### Data Format
-
-The application expects heart disease data with the following features:
-
-| Feature | Description | Type |
-|---------|-------------|------|
-| `age` | Age in years | Numerical |
-| `sex` | Sex (1 = male, 0 = female) | Binary |
-| `cp` | Chest pain type (0-3) | Categorical |
-| `trestbps` | Resting blood pressure in mm Hg | Numerical |
-| `chol` | Serum cholesterol in mg/dl | Numerical |
-| `fbs` | Fasting blood sugar > 120 mg/dl (1 = true, 0 = false) | Binary |
-| `restecg` | Resting ECG results (0-2) | Categorical |
-| `thalach` | Maximum heart rate achieved | Numerical |
-| `exang` | Exercise induced angina (1 = yes, 0 = no) | Binary |
-| `oldpeak` | ST depression induced by exercise | Numerical |
-| `slope` | Slope of the peak exercise ST segment (0-2) | Categorical |
-| `target` | Heart disease diagnosis (1 = present, 0 = absent) | Binary |
-
-## 📊 Model Performance
-
-- **Accuracy**: ~85% (varies with dataset)
-- **Precision**: ~84%
-- **Recall**: ~86%
-- **F1 Score**: ~85%
-- **ROC AUC**: ~0.90
-
-## 🛠️ MLOps: CI/CD Pipeline with GitHub Actions and Render
-
-This project implements a complete MLOps pipeline using modern DevOps practices for automated testing, building, and deployment.
-
-### Pipeline Components
-
-| Component | Description |
-|-----------|-------------|
-| `docker-build-push.yml` | CI workflow: builds Docker image and pushes to Docker Hub |
-| `render-cd.yml` | CD workflow: triggers Render deployment on push |
-| `Dockerfile` | Containerizes the ML app (Streamlit/FastAPI) |
-| `app.py` | Sample ML app |
-| `.env.example` | Template for environment variables |
-
-### 🔧 GitHub Secrets Required
-
-| Secret Name | Description |
-|-------------|-------------|
-| `DOCKER_USERNAME` | Your Docker Hub username |
-| `DOCKER_PASSWORD` | Docker Hub personal access token (PAT) |
-| `RENDER_DEPLOY_HOOK` | Render deploy hook URL |
-
-### 🚀 How the Pipeline Works
-
-1. **Developer pushes code** to `main` branch
-2. **CI Pipeline (GitHub Actions)**:
-   - Runs automated tests
-   - Builds Docker image
-   - Pushes image to Docker Hub
-3. **CD Pipeline (Render)**:
-   - Calls Render deploy hook
-   - Pulls latest Docker image
-   - Updates live application
-
-### Pipeline Benefits
-
-- **Automated Testing**: Ensures code quality before deployment
-- **Containerization**: Consistent environments across development and production
-- **Zero-Downtime Deployment**: Seamless updates to the live application
-- **Version Control**: Tagged Docker images for rollback capabilities
-- **Monitoring**: Comprehensive logging throughout the pipeline
-
-## 🔬 Future Improvements
-
-- Add more advanced explainability with SHAP and LIME
-- Implement model monitoring for drift detection
-- Add cross-validation for more robust model evaluation
-- Enhance the UI with interactive visualizations
-- Add user authentication for clinical settings
-- Implement A/B testing for model versions
-- Add automated model retraining pipelines
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgements
-
-- [UCI Heart Disease Dataset](https://archive.ics.uci.edu/ml/datasets/heart+disease)
-- [Streamlit](https://streamlit.io/) for the user interface framework
-- [scikit-learn](https://scikit-learn.org/) for machine learning tools
-- [GitHub Actions Documentation](https://docs.github.com/en/actions)
-- [Render Deploy Hooks](https://render.com/docs/deploy-hooks)
-- [Docker Hub](https://hub.docker.com/) for container registry
-
-## 📞 Contact
-
-For questions or feedback, please open an issue on the GitHub repository or contact the maintainer at srujanbj.ai22@bmsce.ac.in.
+</div>
 
 ---
 
-**Note**: This application is for educational and research purposes only. It should not be used as a substitute for professional medical advice, diagnosis, or treatment.
+<!-- ====================================================================== -->
+<!-- ✨ BADGES -->
+<!-- ====================================================================== -->
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3.10-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Containerized-0db7ed?style=for-the-badge&logo=docker&logoColor=white)
+![MLOps](https://img.shields.io/badge/MLOps-Pipeline-FFDD00?style=for-the-badge&logo=mlflow&logoColor=black)
+![GitHub](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
+</div>
+
+---
+
+# 🚀 Overview
+
+A **production-grade Heart Disease Prediction System** built using:
+
+- 🧠 **Machine Learning (Random Forest)**
+- ⚙️ **MLOps best practices**
+- 🐳 **Docker containerization**
+- 🔄 **CI/CD with GitHub Actions**
+- 🎨 **Streamlit web application**
+- 📦 **Artifact & pipeline tracking**
+
+This project predicts heart disease **risk probability** using both **single-patient input** and **batch CSV prediction**.
+
+---
+
+# 🌈 Features
+
+<img align="right" width="310" src="https://media.giphy.com/media/Q5pO0Q3h43iDi/giphy.gif"/>
+
+### 🔍 **Single Patient Prediction**
+- Enter medical values → instant output
+
+### 📂 **Batch Prediction**
+- Upload CSV → predictions for all patients
+
+### 📊 **Model Explainability**
+- Feature importance visualization  
+- Medical reasoning
+
+### 🧹 **Full Data Pipeline**
+- Cleaning  
+- Scaling  
+- Encoding  
+- Preprocessing artifacts
+
+### 🧠 **Model**
+- Random Forest Classifier  
+- Accuracy ~85%
+
+### ⚙️ **DevOps + MLOps**
+- Docker build  
+- Automated tests  
+- Logging  
+- Artifact versioning  
+- (Workflows present but disabled)
+
+<br><br>
+
+---
+
+# 🗂 Project Structure
+
+```plaintext
+Heart_Disease_Pred_MLOPS/
+│
+├── app.py                         # Streamlit UI
+├── main.py                        # Pipeline controller
+├── data_processing.py             # Preprocessing steps
+├── ml_functions.py                # ML model logic
+├── helper_functions.py            # Logging & utilities
+│
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── output/
+│
+├── artifacts/
+│   ├── heart_disease_model.pkl
+│   └── data_processing_pipeline.pkl
+│
+├── logs/
+├── Dockerfile
+├── requirements.txt
+├── .env.example
+└── .github/workflows/             # CI/CD workflows (disabled)
+
+🧠 ML Pipeline Workflow
+flowchart TD
+    A[User Input / CSV Upload] --> B[Data Preprocessing]
+    B --> C[Feature Engineering + Encoding]
+    C --> D[Random Forest Model]
+    D --> E[Prediction Output]
+
+🐳 Docker Usage
+Build Image
+docker build -t heart-app .
+
+Run Container
+docker run -p 8501:8501 heart-app
+
+🖥️ Run Streamlit App
+streamlit run app.py
+
+📈 Model Performance
+Metric	Score
+Accuracy	85%
+Precision	84%
+Recall	86%
+F1 Score	85%
+🚧 Future Enhancements
+
+🔬 SHAP & LIME Explainability
+
+📊 Interactive plots
+
+🧪 Model drift monitoring
+
+🔁 Automated retraining jobs
+
+🔐 Authenticated clinical access
+
+🧠 Deep learning extension
+
+👨‍💻 Maintainer
+
+Name: Sriharsha K
+Email: sriharsha.ai22@bmsce.ac.in
+
+GitHub: SRIHARSHA-BHARADWAJ
+
+📝 License
+
+This project is licensed under the MIT License.
+
+<div align="center">
+⭐ If you like this project, consider giving it a star! ⭐
+
+Made with ❤️ by Sriharsha K
+
+</div> ```
