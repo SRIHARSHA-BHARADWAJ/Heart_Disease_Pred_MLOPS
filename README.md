@@ -1,215 +1,212 @@
+<!-- ========================================================= -->
+<!--                🛑 GOD MODE README V4 🛑                  -->
+<!--        Futuristic · Premium · Engineered · MLOps         -->
+<!-- ========================================================= -->
 
+<p align="center">
+  <img src="https://img.shields.io/badge/ML-Heart%20Disease%20Prediction-ff4d6d?style=for-the-badge&logo=canonical&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MLOps-Pipeline-00eaff?style=for-the-badge&logo=githubactions&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Status-Production%20Live-16ff8a?style=for-the-badge&logo=checkmarx&logoColor=white"/>
+</p>
 
-<!-- ============================================================ -->
-<!-- 🌌 FINAL MODE V3 — GALAXY EDITION — BY SRIHARSHA K -->
-<!-- ============================================================ -->
+<h1 align="center" style="font-weight:900;font-size:40px;">
+  🔥 HEART DISEASE PREDICTION — MLOps & Streamlit Dashboard
+</h1>
 
-<div align="center">
-
-<!-- Animated Galaxy Header -->
-<img src="https://readme-typing-svg.herokuapp.com?font=Space+Grotesk&weight=700&size=36&duration=2600&pause=700&color=00E3FF&center=true&vCenter=true&width=1000&lines=Heart+Disease+Prediction+System;End-to-End+ML+%2B+MLOps+Galaxy+Pipeline;Streamlit+%7C+Docker+%7C+CI%2FCD+Ready;Developed+by+Sriharsha+K" />
-
-<br>
-
-<!-- Glassmorphism Style Badge Row -->
-<div style="backdrop-filter: blur(10px); background: rgba(255,255,255,0.04); padding: 12px; border-radius: 16px; width: fit-content;">
-  
-<img src="https://img.shields.io/badge/Python-3.10-1E90FF?style=for-the-badge&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/Streamlit-Web%20App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
-<img src="https://img.shields.io/badge/Scikit--Learn-ML%20Model-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" />
-<img src="https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-<img src="https://img.shields.io/badge/MLOps-Pipeline-000000?style=for-the-badge&logo=mlflow&logoColor=white" />
-<img src="https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2F80ED?style=for-the-badge&logo=githubactions&logoColor=white" />
-<img src="https://img.shields.io/badge/License-MIT-27AE60?style=for-the-badge" />
-
-</div>
-
-<br>
-
-<!-- Premium Galaxy Divider -->
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%"/>
-
-</div>
+<p align="center">
+  <b>End-to-End Machine Learning • CI/CD • Docker • Render Deployment</b>
+</p>
 
 ---
 
-# 🌌 **Project Overview**
-
-A fully engineered **Galaxy-grade Heart Disease Prediction Platform** featuring:
-
-- Streamlit-based medical prediction interface  
-- Modular preprocessing & cleaning pipeline  
-- Random Forest ML model tuned for stability  
-- Complete logging architecture  
-- Persisted transformation & model artifacts  
-- Deployment-ready Docker support  
-- CI/CD templates for production-like workflow  
-
-Built following **enterprise ML engineering principles**.
+## 🌐 **🚀 LIVE WEB APPLICATION**
+<p align="center">
+  <a href="https://heart-disease-app-k9lk.onrender.com" target="_blank">
+    <img src="https://img.shields.io/badge/OPEN%20LIVE%20APP-000000?style=for-the-badge&logo=streamlit&logoColor=00eaff"/>
+  </a>
+</p>
 
 ---
 
-# 📋 **Features (Final Premium Edition)**
+## 🧠 **Project Overview**
 
-### ⭐ Individual Patient Prediction  
-Input → Process → Predict in real time.
+A fully engineered, production-ready **Heart Disease Prediction System** built using:
 
-### ⭐ Batch CSV Prediction  
-Bulk predictions supported with output file generation.
+- **Machine Learning (Random Forest / Logistic Regression)**
+- **Streamlit Premium UI Dashboard**
+- **Complete MLOps workflow**
+- **Docker Containerization**
+- **GitHub Actions CI/CD**
+- **Render Cloud Deployment**
 
-### ⭐ Feature Importance & Explanation  
-Visual insights & interpretability panels.
+This project predicts **probability of heart disease** using medical attributes and provides:
 
-### ⭐ End-to-End Logging  
-From preprocessing → inference → result exporting.
-
-### ⭐ Galaxy-Grade Modular Architecture  
-Every component decoupled, reusable, production-safe.
+✔ Single patient prediction  
+✔ Batch CSV prediction  
+✔ Model evaluation dashboard  
+✔ Confusion matrix  
+✔ Feature importance  
+✔ Beautiful, interactive analytics  
 
 ---
 
-# 🏗 **Project Structure**
+## 🎯 **Key Features**
+
+### **🔍 1. Real-Time Prediction**
+Enter patient details → Get instant heart disease risk.
+
+### **📊 2. Batch Processing**
+Upload a CSV → Receive predictions for 10/100/1000+ patients.
+
+### **📈 3. Model Evaluation Dashboard**
+- Accuracy  
+- Precision / Recall  
+- F1-Score  
+- ROC insights  
+- Confusion matrix heatmap  
+
+### **💡 4. Smart Risk Analysis**
+Highlights high-importance medical factors.
+
+### **🌐 5. Live Cloud Deployment**
+Deployed via **Docker image + Render Web Service**.
+
+### **⚙️ 6. Automated CI/CD**
+Every push to `main` → Auto Docker Build → Auto Deploy.
+
+---
+
+## 🏗️ **Architecture Diagram**
+
+```
+                 +------------------------+
+                 |   GitHub Repository    |
+                 +------------+-----------+
+                              |
+                              |  Push (main)
+                              v
+                 +------------------------+
+                 |    GitHub Actions CI   |
+                 |  Docker Build & Push   |
+                 +------------+-----------+
+                              |
+                              |  Docker Image
+                              v
+                 +------------------------+
+                 |     Render Cloud       |
+                 |  Auto Deploy Web App   |
+                 +------------------------+
+                              |
+                              v
+           https://heart-disease-app-k9lk.onrender.com
+```
+
+---
+
+## 📂 **Project Structure**
 
 ```
 Heart_Disease_Pred_MLOPS/
+│── app.py                    # Streamlit UI
+│── main.py                   # Pipeline controller
+│── ml_functions.py           # Model prediction logic
+│── data_processing.py        # Preprocessing pipeline
+│── helper_functions.py       # Logging helpers
+│── requirements.txt          # All Python dependencies
+│── Dockerfile                # Containerization file
 │
-├── app.py                           # Streamlit UI
-├── main.py                          # ML pipeline orchestrator
-├── data_processing.py               # Data cleaning + transformations
-├── ml_functions.py                  # Training + inference logic
-├── helper_functions.py              # Logging + utilities
+├── artifacts/                # Saved ML models
+│── data/                     # Raw & processed datasets
+├── logs/                     # System logs
 │
-├── data/                            # Data pipeline folders
-│   ├── raw/
-│   ├── processed/
-│   └── output/
-│
-├── artifacts/                       # Saved ML assets
-│   ├── heart_disease_model.pkl
-│   └── data_processing_pipeline.pkl
-│
-├── logs/                            # System logs
-├── Dockerfile                       # Docker deploy file
-├── requirements.txt                 # Dependencies
-├── .env.example                     # Env variables template
-└── .github/workflows/               # CI/CD workflow configs
+└── .github/workflows/
+      └── docker-build-push.yml   # CI/CD pipeline
 ```
 
 ---
 
-# 🧠 **Technical Architecture**
+## 📦 **Dataset Features**
 
-```
-User Input or CSV
-        ↓
-Preprocessing Pipeline (Scaling + Encoding)
-        ↓
-Random Forest Classifier
-        ↓
-Prediction Output (UI or CSV)
-```
-
----
-
-# 📊 **Model Information**
-
-### **Algorithm**
-- Random Forest Classifier (optimized)
-
-### **Preprocessing**
-- StandardScaler (numerical)
-- One-Hot Encoding (categorical)
-- Full pipeline serialized
-
-### **Metrics**
-- Accuracy: ~85%  
-- Precision: ~84%  
-- Recall: ~86%  
-- F1-Score: ~85%  
-- ROC-AUC: ~0.90  
+| Feature | Description |
+|--------|-------------|
+| age | Patient age |
+| sex | 1 = male, 0 = female |
+| cp | Chest pain type (0–3) |
+| trestbps | Resting BP |
+| chol | Cholesterol |
+| fbs | Fasting blood sugar |
+| restecg | ECG results |
+| thalach | Max heart rate |
+| exang | Exercise angina |
+| oldpeak | ST depression |
+| slope | ST slope |
+| ca | Major vessels (0–4) |
+| thal | Thalassemia |
+| target | 1 = disease, 0 = healthy |
 
 ---
 
-# 📁 **Expected Data Format**
+## 🚀 **Local Setup (Developer Mode)**
 
-| Feature | Description | Type |
-|--------|-------------|------|
-| age | Age in years | Numeric |
-| sex | 1=Male, 0=Female | Binary |
-| cp | Chest Pain Type | Categorical |
-| trestbps | Resting BP | Numeric |
-| chol | Cholesterol | Numeric |
-| fbs | Fasting Blood Sugar | Binary |
-| restecg | ECG Result | Categorical |
-| thalach | Max Heart Rate | Numeric |
-| exang | Exercise Angina | Binary |
-| oldpeak | ST Depression | Numeric |
-| slope | ST Slope | Categorical |
+```bash
+git clone https://github.com/SRIHARSHA-BHARADWAJ/Heart_Disease_Pred_MLOPS
+cd Heart_Disease_Pred_MLOPS
 
----
-
-# 📈 **Model Performance Summary**
-
-- Consistent across medical datasets  
-- Strong recall (important for medical risk detection)  
-- Balanced precision-recall profile  
-- Robust generalization  
-
----
-
-# 🛠 **MLOps — CI/CD Pipeline Overview**
-
-This project includes **production-ready CI/CD templates** for:
-
-### 🔹 Docker Image Build  
-### 🔹 Automated Testing  
-### 🔹 Artifact Versioning  
-### 🔹 Deployment (Render / any cloud platform)
-
-### Required GitHub Secrets:
-- `DOCKER_USERNAME`  
-- `DOCKER_PASSWORD`  
-- `RENDER_DEPLOY_HOOK`  
-
-### Pipeline Flowchart:
-```
-Push to main
-      ↓
-GitHub Actions CI
-      ↓
-Build Docker Image
-      ↓
-Push to Docker Hub
-      ↓
-Trigger Deployment (Optional)
+pip install -r requirements.txt
+streamlit run app.py
 ```
 
 ---
 
-# 🔮 **Future Enhancements (Galaxy Mode)**
+## 🐳 **Docker (Build & Run Locally)**
 
-- SHAP / LIME explainability dashboards  
-- Drift detection reports  
-- Dataset versioning with DVC / MLFlow  
-- Automated retraining jobs  
-- Authentication system for clinics  
-- Interactive graphical insights  
-- Deep Learning model variant  
-- Kubernetes-ready deployment  
+```bash
+docker build -t heart-app .
+docker run -p 8501:8501 heart-app
+```
 
 ---
 
-# 📝 **License**
+## 🤖 **CI/CD (GitHub Actions)**
+
+- Auto build Docker image  
+- Auto push to Docker Hub  
+- Auto deploy to Render cloud  
+- Zero downtime deployment  
+
+Your pipeline file:
+
+```
+.github/workflows/docker-build-push.yml
+```
+
+Runs automatically for every new commit.
+
+---
+
+## 🌐 **Deployment URL**
+
+➡ **LIVE:** https://heart-disease-app-k9lk.onrender.com
+
+---
+
+## 📝 **License**
 
 This project is licensed under the **MIT License**.  
-See the LICENSE file for details.
+© **Sriharsha K**
 
 ---
 
-# 📞 **Contact**
+## 👨‍💻 **Author**
 
-**Maintainer:** *Sriharsha K*  
-**Email:** *sriharsha.ai22@bmsce.ac.in*  
-**GitHub:** https://github.com/SRIHARSHA-BHARADWAJ  
+**Sriharsha K**  
+Final year — B.E. AIML  
+B.M.S. College of Engineering, Bengaluru  
+📧 **sriharsha.ai22@bmsce.ac.in**
 
+---
 
+<p align="center">
+  <b>Built with ❤️, ML, and MLOps engineering excellence.</b><br>
+  <i>Accuracy meets elegance.</i>
+</p>
